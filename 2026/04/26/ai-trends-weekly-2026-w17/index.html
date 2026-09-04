@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"bitky.cc","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"atom-one-light","dark":"atom-one-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="🔥 AI 趋势报告 — 2026 年 4 月第 4 周 (W17) 📅 采集时间：2026-04-26 | 数据源：GitHub Trending, OSSInsight, Hugging Face, Hacker News, Reddit r&#x2F;ML, Product Hunt ⚠️ 注：Papers with Code 已被 HuggingFace 收购，本期起不再采集。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 趋势周报：2026-W17">
+<meta property="og:url" content="http://bitky.cc/2026/04/26/ai-trends-weekly-2026-w17/index.html">
+<meta property="og:site_name" content="比特麒麟">
+<meta property="og:description" content="🔥 AI 趋势报告 — 2026 年 4 月第 4 周 (W17) 📅 采集时间：2026-04-26 | 数据源：GitHub Trending, OSSInsight, Hugging Face, Hacker News, Reddit r&#x2F;ML, Product Hunt ⚠️ 注：Papers with Code 已被 HuggingFace 收购，本期起不再采集。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-04-26T00:00:00.000Z">
+<meta property="article:modified_time" content="2026-09-04T21:52:07.400Z">
+<meta property="article:author" content="雪中亮「123lml123」">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="AI 趋势">
+<meta property="article:tag" content="周报">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://bitky.cc/2026/04/26/ai-trends-weekly-2026-w17/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://bitky.cc/2026/04/26/ai-trends-weekly-2026-w17/","path":"2026/04/26/ai-trends-weekly-2026-w17/","title":"AI 趋势周报：2026-W17"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>AI 趋势周报：2026-W17 | 比特麒麟</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+  <script src="/js/third-party/fancybox.js" defer></script>
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">比特麒麟</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">靡不有初，鲜克有终</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-ai_trends"><a href="/categories/ai-trends/" rel="section"><i class="fa fa-robot fa-fw"></i>AI 趋势周报</a></li><li class="menu-item menu-item-github_trending"><a href="/categories/github-trending/" rel="section"><i class="fab fa-github fa-fw"></i>GitHub Trending</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%F0%9F%94%A5-AI-%E8%B6%8B%E5%8A%BF%E6%8A%A5%E5%91%8A-%E2%80%94-2026-%E5%B9%B4-4-%E6%9C%88%E7%AC%AC-4-%E5%91%A8-W17"><span class="nav-text">🔥 AI 趋势报告 — 2026 年 4 月第 4 周 (W17)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-GitHub-Trending"><span class="nav-text">1. GitHub Trending</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%93%85-%E5%91%A8%E6%A6%9C-Top-14"><span class="nav-text">📅 周榜 Top 14</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%93%85-%E6%9C%88%E6%A6%9C-Top-19"><span class="nav-text">📅 月榜 Top 19</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%8E%AF-%E6%A0%B8%E5%BF%83%E6%B4%9E%E5%AF%9F"><span class="nav-text">🎯 核心洞察</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-OSSInsight-Trending"><span class="nav-text">2. OSSInsight Trending</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%93%85-%E6%8E%92%E8%A1%8C%E8%A1%A8%EF%BC%88%E6%8C%89%E6%96%B9%E5%90%91%E5%88%86%E7%B1%BB%EF%BC%89"><span class="nav-text">📅 排行表（按方向分类）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#AI-Coding-Agent-%E7%BC%96%E7%A0%81%E5%B7%A5%E5%85%B7"><span class="nav-text">AI Coding Agent &#x2F; 编码工具</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AI-Agent-%E6%A1%86%E6%9E%B6-%E5%B9%B3%E5%8F%B0"><span class="nav-text">AI Agent 框架 &#x2F; 平台</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#AI-%E8%AF%AD%E9%9F%B3-%E5%A4%9A%E6%A8%A1%E6%80%81-%E5%AE%89%E5%85%A8"><span class="nav-text">AI 语音&#x2F;多模态 &#x2F; 安全</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E4%B8%8A%E6%A6%9C"><span class="nav-text">其他上榜</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%8E%AF-%E6%A0%B8%E5%BF%83%E6%B4%9E%E5%AF%9F-1"><span class="nav-text">🎯 核心洞察</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Hugging-Face-Models%EF%BC%88%E6%9C%88%E6%A6%9C-Top-30%EF%BC%89"><span class="nav-text">3. Hugging Face Models（月榜 Top 30）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%93%85-%E6%8E%92%E8%A1%8C%E8%A1%A8"><span class="nav-text">📅 排行表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%8E%AF-%E6%A0%B8%E5%BF%83%E6%B4%9E%E5%AF%9F-2"><span class="nav-text">🎯 核心洞察</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-Hugging-Face-Papers"><span class="nav-text">4. Hugging Face Papers</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%93%85-%E6%8E%92%E8%A1%8C%E8%A1%A8-1"><span class="nav-text">📅 排行表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%8E%AF-%E6%A0%B8%E5%BF%83%E6%B4%9E%E5%AF%9F-3"><span class="nav-text">🎯 核心洞察</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Hacker-News%EF%BC%88%E5%9B%9B%E8%AF%8D%E5%90%88%E5%B9%B6%E5%8E%BB%E9%87%8D%EF%BC%89"><span class="nav-text">5. Hacker News（四词合并去重）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89-Tier-%E5%88%86%E6%A1%A3"><span class="nav-text">按 Tier 分档</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%F0%9F%94%A5-Tier-1%EF%BC%9A200-%E5%88%86"><span class="nav-text">🔥 Tier 1：200+ 分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%F0%9F%94%A5-Tier-2%EF%BC%9A100-200-%E5%88%86"><span class="nav-text">🔥 Tier 2：100-200 分</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%F0%9F%94%A5-Tier-3%EF%BC%9A40-100-%E5%88%86"><span class="nav-text">🔥 Tier 3：40-100 分</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89%E6%96%B9%E5%90%91%E5%88%86%E7%B1%BB%E6%B1%87%E6%80%BB"><span class="nav-text">按方向分类汇总</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%8E%AF-%E7%A4%BE%E5%8C%BA%E4%BF%A1%E5%8F%B7"><span class="nav-text">🎯 社区信号</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-Reddit-r-MachineLearning"><span class="nav-text">6. Reddit r&#x2F;MachineLearning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%93%85-%E5%91%A8%E6%A6%9C-Top-15"><span class="nav-text">📅 周榜 Top 15</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%93%85-%E6%9C%88%E6%A6%9C-Top-15"><span class="nav-text">📅 月榜 Top 15</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8C%89-Flair-%E5%88%86%E6%9E%90"><span class="nav-text">按 Flair 分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%8E%AF-%E6%A0%B8%E5%BF%83%E6%B4%9E%E5%AF%9F-4"><span class="nav-text">🎯 核心洞察</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-Product-Hunt"><span class="nav-text">7. Product Hunt</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%93%85-%E5%91%A8%E6%A6%9C"><span class="nav-text">📅 周榜</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%93%85-%E6%9C%88%E6%A6%9C"><span class="nav-text">📅 月榜</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%8E%AF-%E7%8B%AC%E5%AE%B6%E5%8F%91%E7%8E%B0"><span class="nav-text">🎯 独家发现</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-%F0%9F%8C%90-%E4%B8%83%E6%BA%90%E4%BA%A4%E5%8F%89%E5%88%86%E6%9E%90"><span class="nav-text">8. 🌐 七源交叉分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B7%A8%E6%BA%90%E7%83%AD%E9%97%A8%E9%A1%B9%E7%9B%AE%E9%AA%8C%E8%AF%81%E8%A1%A8"><span class="nav-text">跨源热门项目验证表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%84%E6%BA%90%E7%8B%AC%E5%AE%B6%E5%8F%91%E7%8E%B0"><span class="nav-text">各源独家发现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%93%8A-%E6%9C%AC%E6%9C%9F%E8%B6%8B%E5%8A%BF%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%80%BB%E7%BB%93"><span class="nav-text">📊 本期趋势一句话总结</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="雪中亮「123lml123」"
+      src="/uploads/avatar.jpg">
+  <p class="site-author-name" itemprop="name">雪中亮「123lml123」</p>
+  <div class="site-description" itemprop="description">Without the continuous bitter cold, there be no fragrant plum blossom</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">88</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">86</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/bitkylin" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;bitkylin" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:bitkylin@163.com" title="Email → mailto:bitkylin@163.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://www.jianshu.com/u/bd2e386a6ea8" title="简书 → http:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;bd2e386a6ea8" rel="noopener me" target="_blank"><i class="fas fa-book fa-fw"></i>简书</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/bitkylin" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;bitkylin" rel="noopener me" target="_blank"><i class="fas fa-pen-square fa-fw"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/about/" title="个人资料 → &#x2F;about&#x2F;" rel="noopener me"><i class="fas fa-users fa-fw"></i>个人资料</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://bitky.cc/2026/04/26/ai-trends-weekly-2026-w17/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="雪中亮「123lml123」">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="比特麒麟">
+      <meta itemprop="description" content="Without the continuous bitter cold, there be no fragrant plum blossom">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="AI 趋势周报：2026-W17 | 比特麒麟">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          AI 趋势周报：2026-W17
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-04-26 00:00:00" itemprop="dateCreated datePublished" datetime="2026-04-26T00:00:00+00:00">2026-04-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-09-04 21:52:07" itemprop="dateModified" datetime="2026-09-04T21:52:07+00:00">2026-09-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/ai-trends/" itemprop="url" rel="index"><span itemprop="name">AI 趋势周报</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="🔥-AI-趋势报告-—-2026-年-4-月第-4-周-W17"><a href="#🔥-AI-趋势报告-—-2026-年-4-月第-4-周-W17" class="headerlink" title="🔥 AI 趋势报告 — 2026 年 4 月第 4 周 (W17)"></a>🔥 AI 趋势报告 — 2026 年 4 月第 4 周 (W17)</h1><blockquote>
+<p>📅 采集时间：2026-04-26 | 数据源：GitHub Trending, OSSInsight, Hugging Face, Hacker News, Reddit r&#x2F;ML, Product Hunt</p>
+<p>⚠️ 注：Papers with Code 已被 HuggingFace 收购，本期起不再采集。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="1-GitHub-Trending"><a href="#1-GitHub-Trending" class="headerlink" title="1. GitHub Trending"></a>1. GitHub Trending</h2><h3 id="📅-周榜-Top-14"><a href="#📅-周榜-Top-14" class="headerlink" title="📅 周榜 Top 14"></a>📅 周榜 Top 14</h3><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>语言</th>
+<th>⭐ 总计</th>
+<th>📈 周增</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>NousResearch&#x2F;hermes-agent</td>
+<td>Python</td>
+<td>116,470</td>
+<td>19,019</td>
+<td>伴随你成长的 Agent 框架</td>
+</tr>
+<tr>
+<td>2</td>
+<td>multica-ai&#x2F;multica</td>
+<td>TypeScript</td>
+<td>20,989</td>
+<td>5,421</td>
+<td>开源托管 Agent 平台，编码 Agent 变队友</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Alishahryar1&#x2F;free-claude-code</td>
+<td>Python</td>
+<td>11,139</td>
+<td>5,160</td>
+<td>免费使用 Claude Code</td>
+</tr>
+<tr>
+<td>4</td>
+<td>lsdefine&#x2F;GenericAgent</td>
+<td>Python</td>
+<td>7,096</td>
+<td>3,483</td>
+<td>自演化 Agent，3.3K 行种子长出技能树</td>
+</tr>
+<tr>
+<td>5</td>
+<td>openai&#x2F;openai-agents-python</td>
+<td>Python</td>
+<td>25,110</td>
+<td>3,372</td>
+<td>OpenAI 轻量多 Agent 框架</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Z4nzu&#x2F;hackingtool</td>
+<td>Python</td>
+<td>63,468</td>
+<td>3,779</td>
+<td>全能黑客工具集</td>
+</tr>
+<tr>
+<td>7</td>
+<td>thunderbird&#x2F;thunderbolt</td>
+<td>TypeScript</td>
+<td>4,007</td>
+<td>2,840</td>
+<td>可控 AI：自选模型、自有数据</td>
+</tr>
+<tr>
+<td>8</td>
+<td>zilliztech&#x2F;claude-context</td>
+<td>TypeScript</td>
+<td>9,320</td>
+<td>2,878</td>
+<td>MCP 代码搜索，全代码库做上下文</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Anil-matcha&#x2F;Open-Generative-AI</td>
+<td>JavaScript</td>
+<td>8,154</td>
+<td>2,417</td>
+<td>无审查开源替代 Higgsfield&#x2F;Freepik&#x2F;Krea AI</td>
+</tr>
+<tr>
+<td>10</td>
+<td>SimoneAvogadro&#x2F;android-reverse-engineering-skill</td>
+<td>Shell</td>
+<td>4,928</td>
+<td>2,258</td>
+<td>Claude Code 安卓逆向工程 Skill</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Tracer-Cloud&#x2F;opensre</td>
+<td>Python</td>
+<td>3,067</td>
+<td>1,623</td>
+<td>AI SRE Agent 开源工具包</td>
+</tr>
+<tr>
+<td>12</td>
+<td>tractorjuice&#x2F;arc-kit</td>
+<td>HTML</td>
+<td>1,597</td>
+<td>1,054</td>
+<td>企业架构治理工具包</td>
+</tr>
+<tr>
+<td>13</td>
+<td>deepseek-ai&#x2F;DeepGEMM</td>
+<td>Cuda</td>
+<td>7,026</td>
+<td>605</td>
+<td>高效 FP8 GEMM 内核</td>
+</tr>
+<tr>
+<td>14</td>
+<td>forrestchang&#x2F;andrej-karpathy-skills</td>
+<td>-</td>
+<td>86,886</td>
+<td>-</td>
+<td>Karpathy 风格 CLAUDE.md</td>
+</tr>
+</tbody></table>
+<h3 id="📅-月榜-Top-19"><a href="#📅-月榜-Top-19" class="headerlink" title="📅 月榜 Top 19"></a>📅 月榜 Top 19</h3><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>语言</th>
+<th>⭐ 总计</th>
+<th>📈 月增</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>NousResearch&#x2F;hermes-agent</td>
+<td>Python</td>
+<td>116,470</td>
+<td>103,029</td>
+<td>Agent 框架霸榜</td>
+</tr>
+<tr>
+<td>2</td>
+<td>forrestchang&#x2F;andrej-karpathy-skills</td>
+<td>-</td>
+<td>86,886</td>
+<td>75,285</td>
+<td>Claude Code 配置标杆</td>
+</tr>
+<tr>
+<td>3</td>
+<td>microsoft&#x2F;markitdown</td>
+<td>Python</td>
+<td>116,880</td>
+<td>24,833</td>
+<td>文件&#x2F;文档转 Markdown</td>
+</tr>
+<tr>
+<td>4</td>
+<td>thedotmack&#x2F;claude-mem</td>
+<td>TypeScript</td>
+<td>67,359</td>
+<td>27,228</td>
+<td>Claude Code 会话记忆插件</td>
+</tr>
+<tr>
+<td>5</td>
+<td>luongnv89&#x2F;claude-howto</td>
+<td>Python</td>
+<td>28,863</td>
+<td>27,573</td>
+<td>Claude Code 可视化教程</td>
+</tr>
+<tr>
+<td>6</td>
+<td>siddharthvaddem&#x2F;openscreen</td>
+<td>TypeScript</td>
+<td>32,722</td>
+<td>23,942</td>
+<td>开源 Screen Studio 替代</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Yeachan-Heo&#x2F;oh-my-codex</td>
+<td>TypeScript</td>
+<td>25,784</td>
+<td>23,184</td>
+<td>Codex 增强框架</td>
+</tr>
+<tr>
+<td>8</td>
+<td>rtk-ai&#x2F;rtk</td>
+<td>Rust</td>
+<td>35,337</td>
+<td>21,519</td>
+<td>CLI Token 节省 60-90%</td>
+</tr>
+<tr>
+<td>9</td>
+<td>microsoft&#x2F;VibeVoice</td>
+<td>Python</td>
+<td>41,058</td>
+<td>17,233</td>
+<td>开源前沿语音 AI</td>
+</tr>
+<tr>
+<td>10</td>
+<td>shiyu-coder&#x2F;Kronos</td>
+<td>Python</td>
+<td>21,437</td>
+<td>9,929</td>
+<td>金融市场基础模型</td>
+</tr>
+<tr>
+<td>11</td>
+<td>google-research&#x2F;timesfm</td>
+<td>Python</td>
+<td>18,540</td>
+<td>8,432</td>
+<td>时序预测基础模型</td>
+</tr>
+<tr>
+<td>12</td>
+<td>HKUDS&#x2F;DeepTutor</td>
+<td>Python</td>
+<td>21,721</td>
+<td>10,610</td>
+<td>Agent 原生个性化学习助手</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Fincept-Corporation&#x2F;FinceptTerminal</td>
+<td>Python</td>
+<td>14,776</td>
+<td>11,430</td>
+<td>现代金融分析终端</td>
+</tr>
+<tr>
+<td>14</td>
+<td>coleam00&#x2F;Archon</td>
+<td>TypeScript</td>
+<td>19,684</td>
+<td>5,903</td>
+<td>首个开源 AI 编码 Harness Builder</td>
+</tr>
+<tr>
+<td>15</td>
+<td>google-ai-edge&#x2F;gallery</td>
+<td>Kotlin</td>
+<td>22,020</td>
+<td>6,587</td>
+<td>端侧 ML&#x2F;GenAI 展示库</td>
+</tr>
+<tr>
+<td>16</td>
+<td>lsdefine&#x2F;GenericAgent</td>
+<td>Python</td>
+<td>7,096</td>
+<td>6,027</td>
+<td>自演化 Agent</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Alishahryar1&#x2F;free-claude-code</td>
+<td>Python</td>
+<td>11,139</td>
+<td>6,026</td>
+<td>免费 Claude Code</td>
+</tr>
+<tr>
+<td>18</td>
+<td>hugohe3&#x2F;ppt-master</td>
+<td>Python</td>
+<td>8,023</td>
+<td>5,021</td>
+<td>AI 生成原生可编辑 PPTX</td>
+</tr>
+<tr>
+<td>19</td>
+<td>google-ai-edge&#x2F;LiteRT-LM</td>
+<td>C++</td>
+<td>4,314</td>
+<td>3,301</td>
+<td>端侧 LLM 推理</td>
+</tr>
+</tbody></table>
+<h3 id="🎯-核心洞察"><a href="#🎯-核心洞察" class="headerlink" title="🎯 核心洞察"></a>🎯 核心洞察</h3><ul>
+<li><strong>Claude Code 生态爆发</strong>：周榜&#x2F;月榜中 Claude Code 相关项目占据大量席位（hermes-agent、claude-context、claude-mem、claude-howto、free-claude-code、karpathy-skills），形成完整工具链</li>
+<li><strong>Agent 框架双雄</strong>：NousResearch&#x2F;hermes-agent（月增 10 万星）和 OpenAI Agents Python 周榜齐头并进</li>
+<li><strong>AI 编码工具降本增效</strong>：rtk-ai&#x2F;rtk（Token 节省 60-90%）、GenericAgent（自演化减少冗余）</li>
+<li><strong>端侧 AI 加速</strong>：Google 连续两个项目（Gallery、LiteRT-LM）聚焦设备端推理</li>
+</ul>
+<hr>
+<h2 id="2-OSSInsight-Trending"><a href="#2-OSSInsight-Trending" class="headerlink" title="2. OSSInsight Trending"></a>2. OSSInsight Trending</h2><blockquote>
+<p>⚠️ 注：月榜和周榜因无法切换时间范围，数据实际为同一快照（Today Top 25），以下合并展示。</p>
+</blockquote>
+<h3 id="📅-排行表（按方向分类）"><a href="#📅-排行表（按方向分类）" class="headerlink" title="📅 排行表（按方向分类）"></a>📅 排行表（按方向分类）</h3><h4 id="AI-Coding-Agent-编码工具"><a href="#AI-Coding-Agent-编码工具" class="headerlink" title="AI Coding Agent &#x2F; 编码工具"></a>AI Coding Agent &#x2F; 编码工具</h4><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>语言</th>
+<th>⭐</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>forrestchang&#x2F;andrej-karpathy-skills</td>
+<td>-</td>
+<td>4,512</td>
+<td>Claude Code CLAUDE.md</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Alishahryar1&#x2F;free-claude-code</td>
+<td>Python</td>
+<td>1,056</td>
+<td>免费 Claude Code</td>
+</tr>
+<tr>
+<td>6</td>
+<td>JuliusBrussee&#x2F;caveman</td>
+<td>Python</td>
+<td>1,245</td>
+<td>Claude Code skill，减少 65% Token</td>
+</tr>
+<tr>
+<td>7</td>
+<td>garrytan&#x2F;gstack</td>
+<td>TypeScript</td>
+<td>1,183</td>
+<td>Garry Tan 的 Claude Code 配置</td>
+</tr>
+<tr>
+<td>9</td>
+<td>VoltAgent&#x2F;awesome-design-md</td>
+<td>-</td>
+<td>1,075</td>
+<td>DESIGN.md 集合</td>
+</tr>
+<tr>
+<td>11</td>
+<td>rtk-ai&#x2F;rtk</td>
+<td>Rust</td>
+<td>912</td>
+<td>CLI Token 节省代理</td>
+</tr>
+<tr>
+<td>12</td>
+<td>thedotmack&#x2F;claude-mem</td>
+<td>TypeScript</td>
+<td>931</td>
+<td>Claude Code 记忆插件</td>
+</tr>
+<tr>
+<td>13</td>
+<td>addyosmani&#x2F;agent-skills</td>
+<td>Shell</td>
+<td>777</td>
+<td>生产级 AI Agent Skills</td>
+</tr>
+<tr>
+<td>14</td>
+<td>safishamsi&#x2F;graphify</td>
+<td>Python</td>
+<td>816</td>
+<td>代码转知识图谱 Skill</td>
+</tr>
+</tbody></table>
+<h4 id="AI-Agent-框架-平台"><a href="#AI-Agent-框架-平台" class="headerlink" title="AI Agent 框架 &#x2F; 平台"></a>AI Agent 框架 &#x2F; 平台</h4><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>语言</th>
+<th>⭐</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2</td>
+<td>NousResearch&#x2F;hermes-agent</td>
+<td>Python</td>
+<td>2,898</td>
+<td>Agent 框架</td>
+</tr>
+<tr>
+<td>10</td>
+<td>browser-use&#x2F;browser-harness</td>
+<td>Python</td>
+<td>1,087</td>
+<td>自修复浏览器自动化</td>
+</tr>
+<tr>
+<td>15</td>
+<td>multica-ai&#x2F;multica</td>
+<td>TypeScript</td>
+<td>-</td>
+<td>开源托管 Agent 平台</td>
+</tr>
+</tbody></table>
+<h4 id="AI-语音-多模态-安全"><a href="#AI-语音-多模态-安全" class="headerlink" title="AI 语音&#x2F;多模态 &#x2F; 安全"></a>AI 语音&#x2F;多模态 &#x2F; 安全</h4><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>语言</th>
+<th>⭐</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>8</td>
+<td>heygen-com&#x2F;hyperframes</td>
+<td>TypeScript</td>
+<td>1,349</td>
+<td>HTML→视频</td>
+</tr>
+<tr>
+<td>5</td>
+<td>elder-plinius&#x2F;CL4R1T4S</td>
+<td>-</td>
+<td>1,387</td>
+<td>AI 系统 Prompt 泄露合集</td>
+</tr>
+</tbody></table>
+<h4 id="其他上榜"><a href="#其他上榜" class="headerlink" title="其他上榜"></a>其他上榜</h4><table>
+<thead>
+<tr>
+<th>#</th>
+<th>项目</th>
+<th>语言</th>
+<th>⭐</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>22</td>
+<td>TencentCloud&#x2F;CubeSandbox</td>
+<td>Rust</td>
+<td>464</td>
+<td>轻量级 AI Agent 沙盒</td>
+</tr>
+<tr>
+<td>24</td>
+<td>koala73&#x2F;worldmonitor</td>
+<td>TypeScript</td>
+<td>503</td>
+<td>全球情报仪表盘</td>
+</tr>
+<tr>
+<td>25</td>
+<td>jamiepine&#x2F;voicebox</td>
+<td>TypeScript</td>
+<td>531</td>
+<td>开源 AI 语音工作室</td>
+</tr>
+<tr>
+<td>38</td>
+<td>HKUDS&#x2F;DeepTutor</td>
+<td>Python</td>
+<td>415</td>
+<td>个性化学习助手</td>
+</tr>
+<tr>
+<td>39</td>
+<td>datawhalechina&#x2F;hello-agents</td>
+<td>Python</td>
+<td>350</td>
+<td>《从零构建智能体》教程</td>
+</tr>
+<tr>
+<td>41</td>
+<td>HKUDS&#x2F;RAG-Anything</td>
+<td>Python</td>
+<td>312</td>
+<td>All-in-One RAG 框架</td>
+</tr>
+<tr>
+<td>50</td>
+<td>MemPalace&#x2F;mempalace</td>
+<td>Python</td>
+<td>313</td>
+<td>开源 AI 记忆系统</td>
+</tr>
+</tbody></table>
+<h3 id="🎯-核心洞察-1"><a href="#🎯-核心洞察-1" class="headerlink" title="🎯 核心洞察"></a>🎯 核心洞察</h3><ul>
+<li><strong>Claude Code Skill 生态主导</strong>：9&#x2F;25 个项目是 Claude Code 相关 Skill&#x2F;插件，已成独立品类</li>
+<li><strong>Agent 记忆系统兴起</strong>：claude-mem、MemPalace、Hippo、MenteDB 等多个项目聚焦 Agent 记忆</li>
+<li><strong>中国开发者活跃</strong>：CubeSandbox（腾讯）、hello-agents（Datawhale）、Kronos、RAG-Anything（港大）</li>
+<li><strong>与 GitHub Trending 高度重叠</strong>：hermes-agent、karpathy-skills、rtk、claude-mem、multica 等均为共同上榜项</li>
+</ul>
+<hr>
+<h2 id="3-Hugging-Face-Models（月榜-Top-30）"><a href="#3-Hugging-Face-Models（月榜-Top-30）" class="headerlink" title="3. Hugging Face Models（月榜 Top 30）"></a>3. Hugging Face Models（月榜 Top 30）</h2><h3 id="📅-排行表"><a href="#📅-排行表" class="headerlink" title="📅 排行表"></a>📅 排行表</h3><table>
+<thead>
+<tr>
+<th>#</th>
+<th>模型</th>
+<th>任务</th>
+<th>参数量</th>
+<th>下载量</th>
+<th>亮点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>deepseek-ai&#x2F;DeepSeek-V4-Pro</td>
+<td>TextGen</td>
+<td>862B</td>
+<td>78.9k</td>
+<td>旗舰大模型，2.64k likes</td>
+</tr>
+<tr>
+<td>2</td>
+<td>moonshotai&#x2F;Kimi-K2.6</td>
+<td>多模态</td>
+<td>1.1T</td>
+<td>292k</td>
+<td>月之暗面多模态，1.01k likes</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Qwen&#x2F;Qwen3.6-27B</td>
+<td>多模态</td>
+<td>28B</td>
+<td>258k</td>
+<td>阿里 Qwen3.6 系列</td>
+</tr>
+<tr>
+<td>4</td>
+<td>openai&#x2F;privacy-filter</td>
+<td>Token分类</td>
+<td>1B</td>
+<td>21.1k</td>
+<td>OpenAI 隐私过滤</td>
+</tr>
+<tr>
+<td>5</td>
+<td>deepseek-ai&#x2F;DeepSeek-V4-Flash</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>V4 轻量版</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Qwen&#x2F;Qwen3.6-35B-A3B</td>
+<td>MoE</td>
+<td>35B(A3B)</td>
+<td>-</td>
+<td>MoE 架构，激活参数仅 3B</td>
+</tr>
+<tr>
+<td>7</td>
+<td>unsloth&#x2F;Qwen3.6-27B-GGUF</td>
+<td>-</td>
+<td>28B</td>
+<td>-</td>
+<td>GGUF 量化</td>
+</tr>
+<tr>
+<td>8</td>
+<td>tencent&#x2F;HY-World-2.0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>腾讯 HY-World</td>
+</tr>
+<tr>
+<td>14</td>
+<td>google&#x2F;gemma-4-31B-it</td>
+<td>-</td>
+<td>31B</td>
+<td>-</td>
+<td>Gemma 4 指令微调</td>
+</tr>
+<tr>
+<td>15</td>
+<td>inclusionAI&#x2F;LLaDA2.0-Uni</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>LLaDA 2.0</td>
+</tr>
+<tr>
+<td>24</td>
+<td>zai-org&#x2F;GLM-5.1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>智谱 GLM-5.1</td>
+</tr>
+<tr>
+<td>25</td>
+<td>baidu&#x2F;ERNIE-Image</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>百度文心图像</td>
+</tr>
+<tr>
+<td>27</td>
+<td>unsloth&#x2F;Kimi-K2.6-GGUF</td>
+<td>-</td>
+<td>1.1T</td>
+<td>-</td>
+<td>Kimi GGUF 量化</td>
+</tr>
+<tr>
+<td>29</td>
+<td>nvidia&#x2F;Lyra-2.0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>NVIDIA Lyra 2.0</td>
+</tr>
+<tr>
+<td>30</td>
+<td>MiniMaxAI&#x2F;MiniMax-M2.7</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>MiniMax M2.7</td>
+</tr>
+</tbody></table>
+<h3 id="🎯-核心洞察-2"><a href="#🎯-核心洞察-2" class="headerlink" title="🎯 核心洞察"></a>🎯 核心洞察</h3><ul>
+<li><strong>国产模型占半壁江山</strong>：Top 30 中中国模型占 12 席（DeepSeek×4、Qwen×5、Kimi×2、腾讯×2、智谱、百度、MiniMax、inclusionAI）</li>
+<li><strong>DeepSeek V4 统治力</strong>：Pro + Flash + Base 三个变体同时上榜，862B 参数旗舰</li>
+<li><strong>Qwen3.6 生态爆发</strong>：5 个变体上榜（原版、MoE、GGUF×2、FP8、无审查版），MoE 架构激活参数仅 3B 极具性价比</li>
+<li><strong>GGUF 量化需求旺盛</strong>：unsloth 等社区快速跟进量化，本地部署趋势明确</li>
+<li><strong>参数量两极分化</strong>：862B&#x2F;1.1T 巨型模型与 1B-35B 高效模型并存，MoE 成中间路线</li>
+</ul>
+<hr>
+<h2 id="4-Hugging-Face-Papers"><a href="#4-Hugging-Face-Papers" class="headerlink" title="4. Hugging Face Papers"></a>4. Hugging Face Papers</h2><h3 id="📅-排行表-1"><a href="#📅-排行表-1" class="headerlink" title="📅 排行表"></a>📅 排行表</h3><table>
+<thead>
+<tr>
+<th>#</th>
+<th>论文</th>
+<th>Upvotes</th>
+<th>GitHub ⭐</th>
+<th>作者&#x2F;机构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>RAG-Anything: All-in-One RAG Framework</td>
+<td>77</td>
+<td>18.6k</td>
+<td>HKU Data Intelligence Lab</td>
+</tr>
+<tr>
+<td>2</td>
+<td>OpenGame: Open Agentic Coding for Games</td>
+<td>70</td>
+<td>1.05k</td>
+<td>Qianyin Xiao 等</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Kronos: A Foundation Model for the Language of Financial Markets</td>
+<td>25</td>
+<td>21.4k</td>
+<td>Wei Xu 等</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Geometric Context Transformer for Streaming 3D Reconstruction</td>
+<td>18</td>
+<td>4.51k</td>
+<td>Robbyant</td>
+</tr>
+<tr>
+<td>5</td>
+<td>GenericAgent: Token-Efficient Self-Evolving LLM Agent</td>
+<td>11</td>
+<td>7.02k</td>
+<td>Fudan University</td>
+</tr>
+<tr>
+<td>6</td>
+<td>TradingAgents: Multi-Agents LLM Financial Trading Framework</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody></table>
+<h3 id="🎯-核心洞察-3"><a href="#🎯-核心洞察-3" class="headerlink" title="🎯 核心洞察"></a>🎯 核心洞察</h3><ul>
+<li><strong>RAG 进化</strong>：RAG-Anything（77 upvotes, 18.6k ⭐）成为最热论文，All-in-One RAG 成新范式</li>
+<li><strong>金融 AI 热度高</strong>：Kronos 和 TradingAgents 同时上榜，LLM 金融应用受关注</li>
+<li><strong>自演化 Agent 学术化</strong>：GenericAgent（复旦）论文上榜，自演化 Agent 从项目走向学术</li>
+<li><strong>Agent Coding 进游戏</strong>：OpenGame 探索 Agentic Coding 在游戏开发中的应用</li>
+</ul>
+<hr>
+<h2 id="5-Hacker-News（四词合并去重）"><a href="#5-Hacker-News（四词合并去重）" class="headerlink" title="5. Hacker News（四词合并去重）"></a>5. Hacker News（四词合并去重）</h2><blockquote>
+<p>搜索词：AI agent, AI coding LLM, AI open source model, AI tool | 月榜+周榜合并去重</p>
+</blockquote>
+<h3 id="按-Tier-分档"><a href="#按-Tier-分档" class="headerlink" title="按 Tier 分档"></a>按 Tier 分档</h3><h4 id="🔥-Tier-1：200-分"><a href="#🔥-Tier-1：200-分" class="headerlink" title="🔥 Tier 1：200+ 分"></a>🔥 Tier 1：200+ 分</h4><table>
+<thead>
+<tr>
+<th>热度</th>
+<th>标题</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>588</td>
+<td>Exploiting the most prominent AI agent benchmarks</td>
+<td>agent-月</td>
+</tr>
+<tr>
+<td>340</td>
+<td>I put an AI agent on a $7&#x2F;month VPS with IRC transport</td>
+<td>agent-月</td>
+</tr>
+<tr>
+<td>305</td>
+<td>Are the costs of AI agents also rising exponentially?</td>
+<td>agent-月</td>
+</tr>
+<tr>
+<td>283</td>
+<td>A Roblox cheat and one AI tool brought down Vercel’s platform</td>
+<td>tool-月</td>
+</tr>
+<tr>
+<td>213</td>
+<td>GoModel – an open-source AI gateway in Go</td>
+<td>model-月&#x2F;周</td>
+</tr>
+</tbody></table>
+<h4 id="🔥-Tier-2：100-200-分"><a href="#🔥-Tier-2：100-200-分" class="headerlink" title="🔥 Tier 2：100-200 分"></a>🔥 Tier 2：100-200 分</h4><table>
+<thead>
+<tr>
+<th>热度</th>
+<th>标题</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>160</td>
+<td>Less human AI agents, please</td>
+<td>agent-月&#x2F;周</td>
+</tr>
+<tr>
+<td>160</td>
+<td>Daemons – we pivoted from building agents to cleaning up after them</td>
+<td>coding-月&#x2F;周</td>
+</tr>
+<tr>
+<td>147</td>
+<td>Agent Vault – Open-source credential proxy and vault for agents</td>
+<td>model-周</td>
+</tr>
+<tr>
+<td>121</td>
+<td>Open source memory layer so any AI agent can do what Claude&#x2F;ChatGPT do</td>
+<td>agent-月&#x2F;周</td>
+</tr>
+<tr>
+<td>115</td>
+<td>Anos – a hand-written ~100KiB microkernel for x86-64 and RISC-V</td>
+<td>coding-月</td>
+</tr>
+<tr>
+<td>100</td>
+<td>Launch HN: Kampala (YC W26) – Reverse-Engineer Apps into APIs</td>
+<td>coding-月</td>
+</tr>
+</tbody></table>
+<h4 id="🔥-Tier-3：40-100-分"><a href="#🔥-Tier-3：40-100-分" class="headerlink" title="🔥 Tier 3：40-100 分"></a>🔥 Tier 3：40-100 分</h4><table>
+<thead>
+<tr>
+<th>热度</th>
+<th>标题</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>80</td>
+<td>Some uncomfortable truths about AI coding agents</td>
+<td>agent-月</td>
+</tr>
+<tr>
+<td>73</td>
+<td>Wikipedia’s AI agent row likely just the beginning of the bot-ocalypse</td>
+<td>agent-月</td>
+</tr>
+<tr>
+<td>70</td>
+<td>Show HN: Daemons（同上，周榜重复）</td>
+<td>coding-周</td>
+</tr>
+<tr>
+<td>66</td>
+<td>App Store sees 84% surge in new apps as AI coding tools take off</td>
+<td>tool-月</td>
+</tr>
+<tr>
+<td>65</td>
+<td>I turned a sketch into a 3D-print pegboard with an AI agent</td>
+<td>agent-月</td>
+</tr>
+<tr>
+<td>63</td>
+<td>Ask HN: Client took over development by vibe coding</td>
+<td>coding-月</td>
+</tr>
+<tr>
+<td>62</td>
+<td>Baton – A desktop app for developing with AI agents</td>
+<td>agent-月</td>
+</tr>
+<tr>
+<td>58</td>
+<td>Process Manager for Autonomous AI Agents</td>
+<td>agent-月</td>
+</tr>
+<tr>
+<td>52</td>
+<td>TUI-use: Let AI agents control interactive terminal programs</td>
+<td>agent-月</td>
+</tr>
+<tr>
+<td>47</td>
+<td>Kelet – Root Cause Analysis agent for LLM apps</td>
+<td>coding-月</td>
+</tr>
+</tbody></table>
+<h3 id="按方向分类汇总"><a href="#按方向分类汇总" class="headerlink" title="按方向分类汇总"></a>按方向分类汇总</h3><table>
+<thead>
+<tr>
+<th>方向</th>
+<th>代表话题</th>
+<th>热度信号</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Agent 基础设施</strong></td>
+<td>Agent Vault（凭据管理）、CubeSandbox（沙盒）、AgentBox（统一 SDK）</td>
+<td>安全、隔离、标准化成焦点</td>
+</tr>
+<tr>
+<td><strong>Agent 记忆</strong></td>
+<td>开源记忆层、Hippo（仿生记忆）、MenteDB（Rust）、Memv、MemPalace</td>
+<td>记忆系统成独立品类</td>
+</tr>
+<tr>
+<td><strong>AI 编码反思</strong></td>
+<td>Daemons（善后清理）、Vibe coding 争议、AI Agent 烧钱</td>
+<td>社区开始反思 AI 编码质量</td>
+</tr>
+<tr>
+<td><strong>成本与治理</strong></td>
+<td>Agent 成本指数增长？、Vercel 崩溃、$200&#x2F;月仍无法完成工作</td>
+<td>成本焦虑上升</td>
+</tr>
+<tr>
+<td><strong>开源模型</strong></td>
+<td>GoModel（AI Gateway）、Meta 计划开源新模型</td>
+<td>开源 AI Gateway 需求旺盛</td>
+</tr>
+</tbody></table>
+<h3 id="🎯-社区信号"><a href="#🎯-社区信号" class="headerlink" title="🎯 社区信号"></a>🎯 社区信号</h3><ul>
+<li><strong>“Agent 善后”话题爆发</strong>：Daemons（160 分）从造 Agent 转向清理 AI 生成代码，引发广泛共鸣</li>
+<li><strong>Agent 基准测试信任危机</strong>：Berkeley 揭示主流基准可被利用（588 分），最高分帖子</li>
+<li><strong>Vibe Coding 焦虑蔓延</strong>：多个帖子讨论 vibe coding 对工程质量的冲击</li>
+<li><strong>Agent 记忆成新基建</strong>：6+ 个独立项目聚焦 Agent 记忆，从仿生到数据库方案各异</li>
+</ul>
+<hr>
+<h2 id="6-Reddit-r-MachineLearning"><a href="#6-Reddit-r-MachineLearning" class="headerlink" title="6. Reddit r&#x2F;MachineLearning"></a>6. Reddit r&#x2F;MachineLearning</h2><h3 id="📅-周榜-Top-15"><a href="#📅-周榜-Top-15" class="headerlink" title="📅 周榜 Top 15"></a>📅 周榜 Top 15</h3><table>
+<thead>
+<tr>
+<th>#</th>
+<th>标题</th>
+<th>Flair</th>
+<th>⬆️</th>
+<th>💬</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>There Will Be a Scientific Theory of Deep Learning</td>
+<td>Research</td>
+<td>197</td>
+<td>37</td>
+</tr>
+<tr>
+<td>2</td>
+<td>EVERY DAY there are 100-200 new ML papers on Arxiv</td>
+<td>Discussion</td>
+<td>160</td>
+<td>61</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Building my own Diffusion LM from scratch was easier than I thought</td>
+<td>Project</td>
+<td>126</td>
+<td>29</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Are we optimizing AI research for acceptance rather than lasting value?</td>
+<td>Discussion</td>
+<td>106</td>
+<td>56</td>
+</tr>
+<tr>
+<td>5</td>
+<td>How exactly one goes about networking in conferences?</td>
+<td>Discussion</td>
+<td>87</td>
+<td>34</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CS Conferences charge exorbitant fees</td>
+<td>Discussion</td>
+<td>78</td>
+<td>32</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Research taste is a skill nobody talks about</td>
+<td>Discussion</td>
+<td>74</td>
+<td>21</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Benchmarked 18 LLMs on OCR — cheaper models oftentimes win</td>
+<td>Research</td>
+<td>58</td>
+<td>37</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1,200 ICLR 2026 Papers with Public Code or Data</td>
+<td>Research</td>
+<td>57</td>
+<td>18</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Trials and tribulations fine-tuning Gemma-4</td>
+<td>Project</td>
+<td>51</td>
+<td>6</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Advice on becoming a research engineer</td>
+<td>Discussion</td>
+<td>49</td>
+<td>72</td>
+</tr>
+<tr>
+<td>12</td>
+<td>C++ CuTe&#x2F;CUTLASS vs CuTeDSL (Python) in 2026</td>
+<td>Discussion</td>
+<td>45</td>
+<td>16</td>
+</tr>
+<tr>
+<td>13</td>
+<td>CVPR plagiarism identification</td>
+<td>Discussion</td>
+<td>42</td>
+<td>25</td>
+</tr>
+<tr>
+<td>14</td>
+<td>NeurIPS 2026: Will you submit code alongside submissions?</td>
+<td>Discussion</td>
+<td>41</td>
+<td>43</td>
+</tr>
+<tr>
+<td>15</td>
+<td>🌹 Rose: low VRAM optimizer, Apache 2.0</td>
+<td>Project</td>
+<td>38</td>
+<td>25</td>
+</tr>
+</tbody></table>
+<h3 id="📅-月榜-Top-15"><a href="#📅-月榜-Top-15" class="headerlink" title="📅 月榜 Top 15"></a>📅 月榜 Top 15</h3><table>
+<thead>
+<tr>
+<th>#</th>
+<th>标题</th>
+<th>Flair</th>
+<th>⬆️</th>
+<th>💬</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Thoughts on controversy about Google’s new paper</td>
+<td>Discussion</td>
+<td>326</td>
+<td>55</td>
+</tr>
+<tr>
+<td>2</td>
+<td>“New generation of empirical DL researchers, hacking at whatever seems trendy”</td>
+<td>Discussion</td>
+<td>282</td>
+<td>99</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Built an open source tool to find location of any street picture</td>
+<td>Project</td>
+<td>267</td>
+<td>35</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Those with 10+ years in ML — what is the public completely wrong about?</td>
+<td>Discussion</td>
+<td>234</td>
+<td>270</td>
+</tr>
+<tr>
+<td>5</td>
+<td>How to break free from LLM’s chains as a PhD student?</td>
+<td>Discussion</td>
+<td>219</td>
+<td>106</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Zero-shot World Models Are Developmentally Efficient Learners</td>
+<td>Research</td>
+<td>205</td>
+<td>34</td>
+</tr>
+<tr>
+<td>7</td>
+<td>There Will Be a Scientific Theory of Deep Learning</td>
+<td>Research</td>
+<td>200</td>
+<td>37</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Gary Marcus on the Claude Code leak</td>
+<td>Discussion</td>
+<td>191</td>
+<td>69</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Failure to Reproduce Modern Paper Claims</td>
+<td>Discussion</td>
+<td>185</td>
+<td>50</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Stanford CS 25 Transformers Course (Open to All)</td>
+<td>Discussion</td>
+<td>173</td>
+<td>16</td>
+</tr>
+<tr>
+<td>11</td>
+<td>EVERY DAY 100-200 new ML papers on Arxiv</td>
+<td>Discussion</td>
+<td>161</td>
+<td>61</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Additional experiments during rebuttal make my paper worse</td>
+<td>Discussion</td>
+<td>145</td>
+<td>28</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Scaled SNN to 1.088B parameters from scratch</td>
+<td>Research</td>
+<td>140</td>
+<td>59</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Thoughts on community moving away from heavy math?</td>
+<td>Discussion</td>
+<td>143</td>
+<td>77</td>
+</tr>
+<tr>
+<td>15</td>
+<td>TurboQuant author replies on OpenReview</td>
+<td>Discussion</td>
+<td>139</td>
+<td>27</td>
+</tr>
+</tbody></table>
+<h3 id="按-Flair-分析"><a href="#按-Flair-分析" class="headerlink" title="按 Flair 分析"></a>按 Flair 分析</h3><table>
+<thead>
+<tr>
+<th>Flair</th>
+<th>周榜占比</th>
+<th>月榜占比</th>
+<th>热门话题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Discussion</td>
+<td>56%</td>
+<td>52%</td>
+<td>学术生态反思、Vibe Coding、PhD 困境</td>
+</tr>
+<tr>
+<td>Research</td>
+<td>16%</td>
+<td>24%</td>
+<td>深度学习理论、World Models、OCR Benchmark</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>16%</td>
+<td>8%</td>
+<td>Diffusion LM、Gemma-4 微调、Rose 优化器</td>
+</tr>
+</tbody></table>
+<h3 id="🎯-核心洞察-4"><a href="#🎯-核心洞察-4" class="headerlink" title="🎯 核心洞察"></a>🎯 核心洞察</h3><ul>
+<li><strong>学术共同体焦虑</strong>：多篇高分帖讨论论文数量泛滥（100-200 篇&#x2F;天）、研究趋同化、审稿质量下降</li>
+<li><strong>LLM 对学术生态的冲击</strong>：PhD 困境（”如何摆脱 LLM 的枷锁”）、Claude Code 泄露事件引发学界关注</li>
+<li><strong>复现危机持续</strong>：Failure to Reproduce（185 分）和 TurboQuant 争议反映学术诚信压力</li>
+<li><strong>实用主义回归</strong>：OCR Benchmark（便宜模型赢了）、Rose 优化器（低 VRAM）关注实际效果而非规模</li>
+</ul>
+<hr>
+<h2 id="7-Product-Hunt"><a href="#7-Product-Hunt" class="headerlink" title="7. Product Hunt"></a>7. Product Hunt</h2><h3 id="📅-周榜"><a href="#📅-周榜" class="headerlink" title="📅 周榜"></a>📅 周榜</h3><table>
+<thead>
+<tr>
+<th>#</th>
+<th>产品</th>
+<th>👍</th>
+<th>💬</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Dune</td>
+<td>118</td>
+<td>591</td>
+<td>Productivity, AI, Dev</td>
+</tr>
+<tr>
+<td>2</td>
+<td>RankAI</td>
+<td>89</td>
+<td>528</td>
+<td>Marketing, SEO, Search</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Ask Product Hunt AI</td>
+<td>28</td>
+<td>514</td>
+<td>Productivity, AI</td>
+</tr>
+<tr>
+<td>4</td>
+<td>SpeakON</td>
+<td>80</td>
+<td>454</td>
+<td>Hardware, Apple</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Claude Desktop Buddy</td>
+<td>9</td>
+<td>425</td>
+<td>Open Source, Hardware, AI</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Stanley For 𝕏</td>
+<td>96</td>
+<td>406</td>
+<td>Twitter, Marketing, AI</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Kollab</td>
+<td>41</td>
+<td>400</td>
+<td>Productivity, AI, No-Code</td>
+</tr>
+<tr>
+<td>8</td>
+<td>ChatGPT Images 2.0</td>
+<td>12</td>
+<td>385</td>
+<td>Design, Social Media, AI</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Spira AI</td>
+<td>-</td>
+<td>-</td>
+<td>Social Media, AI</td>
+</tr>
+</tbody></table>
+<h3 id="📅-月榜"><a href="#📅-月榜" class="headerlink" title="📅 月榜"></a>📅 月榜</h3><table>
+<thead>
+<tr>
+<th>#</th>
+<th>产品</th>
+<th>👍</th>
+<th>💬</th>
+<th>标签</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>Brila</td>
+<td>244</td>
+<td>1,290</td>
+<td>Website Builder, AI</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Fathom 3.0</td>
+<td>217</td>
+<td>703</td>
+<td>Productivity, AI</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Velo</td>
+<td>148</td>
+<td>667</td>
+<td>Productivity, AI, Video</td>
+</tr>
+<tr>
+<td>4</td>
+<td>ProdShort</td>
+<td>149</td>
+<td>705</td>
+<td>Social Media, Meetings</td>
+</tr>
+<tr>
+<td>5</td>
+<td>NovaVoice</td>
+<td>141</td>
+<td>592</td>
+<td>Writing, AI</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Offsite</td>
+<td>85</td>
+<td>590</td>
+<td>Web App, AI</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Dune</td>
+<td>118</td>
+<td>591</td>
+<td>Productivity, AI, Dev</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Figma for Agents</td>
+<td>23</td>
+<td>582</td>
+<td>Design, Dev, AI</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Claude Code Routines</td>
+<td>16</td>
+<td>-</td>
+<td>Productivity, Dev</td>
+</tr>
+</tbody></table>
+<h3 id="🎯-独家发现"><a href="#🎯-独家发现" class="headerlink" title="🎯 独家发现"></a>🎯 独家发现</h3><ul>
+<li><strong>Figma for Agents</strong>（月榜）：AI Agent 可视化设计工具，Agent 开发正在获得专用 UI 工具</li>
+<li><strong>Claude Code Routines</strong>（月榜）：Claude Code 的自动化 Routine 功能上了 Product Hunt，Claude 生态持续出圈</li>
+<li><strong>ChatGPT Images 2.0</strong>：OpenAI 图像生成更新引发社区热议（385 评论）</li>
+<li><strong>NovaVoice</strong>：AI 语音写作工具，语音 AI 在产品端持续渗透</li>
+<li><strong>AI 产品类型趋同</strong>：9&#x2F;9 周榜产品含 AI 标签，AI 已成为产品标配而非差异化特征</li>
+</ul>
+<hr>
+<h2 id="8-🌐-七源交叉分析"><a href="#8-🌐-七源交叉分析" class="headerlink" title="8. 🌐 七源交叉分析"></a>8. 🌐 七源交叉分析</h2><h3 id="跨源热门项目验证表"><a href="#跨源热门项目验证表" class="headerlink" title="跨源热门项目验证表"></a>跨源热门项目验证表</h3><table>
+<thead>
+<tr>
+<th>项目&#x2F;主题</th>
+<th>GitHub</th>
+<th>OSSInsight</th>
+<th>HF Models</th>
+<th>HF Papers</th>
+<th>HN</th>
+<th>Reddit</th>
+<th>Product Hunt</th>
+<th>出现次数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Claude Code 生态</td>
+<td>✅✅</td>
+<td>✅✅</td>
+<td>-</td>
+<td>-</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>6&#x2F;7</td>
+</tr>
+<tr>
+<td>Agent 框架 (hermes-agent 等)</td>
+<td>✅</td>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>3&#x2F;7</td>
+</tr>
+<tr>
+<td>Agent 记忆系统</td>
+<td>✅</td>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>✅✅</td>
+<td>-</td>
+<td>-</td>
+<td>3&#x2F;7</td>
+</tr>
+<tr>
+<td>DeepSeek V4</td>
+<td>✅</td>
+<td>-</td>
+<td>✅✅</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>2&#x2F;7</td>
+</tr>
+<tr>
+<td>Qwen3.6</td>
+<td>-</td>
+<td>-</td>
+<td>✅✅</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>1&#x2F;7</td>
+</tr>
+<tr>
+<td>RAG-Anything</td>
+<td>-</td>
+<td>✅</td>
+<td>-</td>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>2&#x2F;7</td>
+</tr>
+<tr>
+<td>Kronos（金融 AI）</td>
+<td>✅</td>
+<td>✅</td>
+<td>-</td>
+<td>✅</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>3&#x2F;7</td>
+</tr>
+<tr>
+<td>Vibe Coding 反思</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>✅✅</td>
+<td>✅</td>
+<td>-</td>
+<td>2&#x2F;7</td>
+</tr>
+<tr>
+<td>AI 编码成本&#x2F;质量</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>✅✅</td>
+<td>✅</td>
+<td>-</td>
+<td>2&#x2F;7</td>
+</tr>
+</tbody></table>
+<h3 id="各源独家发现"><a href="#各源独家发现" class="headerlink" title="各源独家发现"></a>各源独家发现</h3><table>
+<thead>
+<tr>
+<th>数据源</th>
+<th>独家发现</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GitHub</td>
+<td>oh-my-codex、Archon（Harness Builder）、rtk（Token 节省）</td>
+</tr>
+<tr>
+<td>OSSInsight</td>
+<td>graphify（代码知识图谱）、nuwa-skill（思维蒸馏）、gbrain（OpenClaw Brain）</td>
+</tr>
+<tr>
+<td>HF Models</td>
+<td>DeepSeek-V4-Pro（862B）、Kimi-K2.6（1.1T 多模态）、百度 ERNIE-Image</td>
+</tr>
+<tr>
+<td>HF Papers</td>
+<td>OpenGame（Agent Coding 进游戏）、TradingAgents</td>
+</tr>
+<tr>
+<td>Hacker News</td>
+<td>Agent 基准测试漏洞（588 分）、Vercel 被 AI 工具搞崩溃（283 分）</td>
+</tr>
+<tr>
+<td>Reddit</td>
+<td>1.088B 参数 SNN、Rose 优化器、60% cuBLAS 性能 Bug on RTX 5090</td>
+</tr>
+<tr>
+<td>Product Hunt</td>
+<td>Figma for Agents、Brila（AI 网站构建器）、ChatGPT Images 2.0</td>
+</tr>
+</tbody></table>
+<h3 id="📊-本期趋势一句话总结"><a href="#📊-本期趋势一句话总结" class="headerlink" title="📊 本期趋势一句话总结"></a>📊 本期趋势一句话总结</h3><blockquote>
+<p><strong>Claude Code 生态爆发 + Agent 基建成军 + 国产大模型半壁江山</strong> —— Claude Code Skill&#x2F;插件生态横扫 6&#x2F;7 个数据源；Agent 记忆、沙盒、凭据管理等基础设施快速标准化；DeepSeek V4 + Qwen3.6 + Kimi K2.6 三足鼎立，中国模型占据 HF Trending 半数席位；同时社区开始反思 Agent 编码质量和成本，”善后清理”话题引发共鸣。</p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>雪中亮「123lml123」
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://bitky.cc/2026/04/26/ai-trends-weekly-2026-w17/" title="AI 趋势周报：2026-W17">http://bitky.cc/2026/04/26/ai-trends-weekly-2026-w17/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E5%91%A8%E6%8A%A5/" rel="tag"># 周报</a>
+              <a href="/tags/AI/" rel="tag"># AI</a>
+              <a href="/tags/AI-%E8%B6%8B%E5%8A%BF/" rel="tag"># AI 趋势</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/04/25/github-trending-weekly/" rel="prev" title="GitHub Trending 周报：2026-04-25">
+                  <i class="fa fa-angle-left"></i> GitHub Trending 周报：2026-04-25
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2026/05/02/github-trending-weekly/" rel="next" title="GitHub Trending 周报：2026-05-02">
+                  GitHub Trending 周报：2026-05-02 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2016 – 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">雪中亮「123lml123」</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/bitkylin" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.2">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"bitky.cc","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"atom-one-light","dark":"atom-one-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="以下链接是一篇很好的 Sublime Text 中文教程+配置教程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sublime Text 3 基本配置教程">
+<meta property="og:url" content="http://bitky.cc/2016/04/15/SublimeText3%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="比特麒麟">
+<meta property="og:description" content="以下链接是一篇很好的 Sublime Text 中文教程+配置教程">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-04-15T12:57:49.000Z">
+<meta property="article:modified_time" content="2026-09-04T21:52:07.356Z">
+<meta property="article:author" content="雪中亮「123lml123」">
+<meta property="article:tag" content="sublime text">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://bitky.cc/2016/04/15/SublimeText3%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://bitky.cc/2016/04/15/SublimeText3%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/","path":"2016/04/15/SublimeText3基本配置教程/","title":"Sublime Text 3 基本配置教程"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Sublime Text 3 基本配置教程 | 比特麒麟</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+  <script src="/js/third-party/fancybox.js" defer></script>
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">比特麒麟</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">靡不有初，鲜克有终</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-ai_trends"><a href="/categories/ai-trends/" rel="section"><i class="fa fa-robot fa-fw"></i>AI 趋势周报</a></li><li class="menu-item menu-item-github_trending"><a href="/categories/github-trending/" rel="section"><i class="fab fa-github fa-fw"></i>GitHub Trending</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E4%BF%AE%E6%94%B9-Sublime-Text-%E7%9A%84%E9%BB%98%E8%AE%A4%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE"><span class="nav-text">1. 修改 Sublime Text 的默认配置文件位置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E6%B3%A8%E5%86%8CSublimeText-3"><span class="nav-text">2. 注册SublimeText 3</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-Sublime-Text-3-%E6%B1%89%E5%8C%96"><span class="nav-text">3. Sublime Text 3 汉化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E6%9C%80%E6%96%B0%E6%8E%A8%E8%8D%90"><span class="nav-text">4. 最新推荐</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="雪中亮「123lml123」"
+      src="/uploads/avatar.jpg">
+  <p class="site-author-name" itemprop="name">雪中亮「123lml123」</p>
+  <div class="site-description" itemprop="description">Without the continuous bitter cold, there be no fragrant plum blossom</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">88</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">86</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/bitkylin" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;bitkylin" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:bitkylin@163.com" title="Email → mailto:bitkylin@163.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>Email</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://www.jianshu.com/u/bd2e386a6ea8" title="简书 → http:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;bd2e386a6ea8" rel="noopener me" target="_blank"><i class="fas fa-book fa-fw"></i>简书</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/bitkylin" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;bitkylin" rel="noopener me" target="_blank"><i class="fas fa-pen-square fa-fw"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/about/" title="个人资料 → &#x2F;about&#x2F;" rel="noopener me"><i class="fas fa-users fa-fw"></i>个人资料</a>
+      </span>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://bitky.cc/2016/04/15/SublimeText3%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="雪中亮「123lml123」">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="比特麒麟">
+      <meta itemprop="description" content="Without the continuous bitter cold, there be no fragrant plum blossom">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Sublime Text 3 基本配置教程 | 比特麒麟">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Sublime Text 3 基本配置教程
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2016-04-15 12:57:49" itemprop="dateCreated datePublished" datetime="2016-04-15T12:57:49+00:00">2016-04-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-09-04 21:52:07" itemprop="dateModified" datetime="2026-09-04T21:52:07+00:00">2026-09-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%85%B6%E4%BB%96/" itemprop="url" rel="index"><span itemprop="name">其他</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>以下链接是一篇很好的 Sublime Text 中文教程+配置教程</p>
+<span id="more"></span>
+
+<blockquote>
+<p><a target="_blank" rel="noopener" href="http://lucida.me/blog/sublime-text-complete-guide/">http://lucida.me/blog/sublime-text-complete-guide/</a></p>
+</blockquote>
+<h1 id="1-修改-Sublime-Text-的默认配置文件位置"><a href="#1-修改-Sublime-Text-的默认配置文件位置" class="headerlink" title="1. 修改 Sublime Text 的默认配置文件位置"></a>1. 修改 Sublime Text 的默认配置文件位置</h1><p>默认情况下安装完 Sublime Text 3 , 在第一次运行的时候 , Sublime Text 3 会在 %appdata% 目录下生成一个 Sublime Text 3 的文件夹，用于存放配置文件，以及后面安装的各种插件；为便于设置完后打包，建议将配置文件位置改到安装目录下。</p>
+<p>安装完 Sublime Text 3 后，不要直接运行找到 Sublime Text 3 的安装目录，并在该目录下新建 Data 文件夹(注意大小写)。如果已经运行了，请先在地址栏输入 %appdata% 然后删除该目录下的 Sublime Text 3 文件夹。完成这一步之后再打开 Sublime Text 3 所有的配置文件都会被生成在 Data 文件夹中了。</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="http://jingyan.baidu.com/article/6f2f55a15c89cab5b93e6cfb.html">引用地址</a></p>
+</blockquote>
+<hr>
+<h1 id="2-注册SublimeText-3"><a href="#2-注册SublimeText-3" class="headerlink" title="2. 注册SublimeText 3"></a>2. 注册SublimeText 3</h1><p>打开「sublime_text.exe」-&gt; help -&gt; License，粘贴即可。<br>这个经过测试，可以使用，如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">----- BEGIN LICENSE ----- </span><br><span class="line">Andrew Weber </span><br><span class="line">Single User License </span><br><span class="line">EA7E-855605 </span><br><span class="line">813A03DD 5E4AD9E6 6C0EEB94 BC99798F </span><br><span class="line">942194A6 02396E98 E62C9979 4BB979FE </span><br><span class="line">91424C9D A45400BF F6747D88 2FB88078 </span><br><span class="line">90F5CC94 1CDC92DC 8457107A F151657B </span><br><span class="line">1D22E383 A997F016 42397640 33F41CFC </span><br><span class="line">E1D0AE85 A0BBD039 0E9C8D55 E1B89D5D </span><br><span class="line">5CDB7036 E56DE1C0 EFCC0840 650CD3A6 </span><br><span class="line">B98FC99C 8FAC73EE D2B95564 DF450523 </span><br><span class="line">------ END LICENSE ------ </span><br></pre></td></tr></table></figure>
+<p>**注意: ** —– BEGIN LICENSE —– 和—— END LICENSE —— 都要复制粘贴进去。</p>
+<p><a target="_blank" rel="noopener" href="http://www.cnblogs.com/akwwl/p/3566445.html">引用地址</a></p>
+<hr>
+<h1 id="3-Sublime-Text-3-汉化"><a href="#3-Sublime-Text-3-汉化" class="headerlink" title="3. Sublime Text 3 汉化"></a>3. Sublime Text 3 汉化</h1><p>点击 Preferences -&gt; Package Control , 然后点击 Package Control : Install Package , (第一次运行可以要几秒钟，因为要下载 Package Control 里面存在的包”花名册”），然后在弹出的命令界面，输入 Chinese , 选择 ChineseLocalization (回车或者鼠标单击)。</p>
+<p>切换语言，帮助(H) -&gt; Language -&gt; 简体中文，繁体中文，日本语，English。</p>
+<p><a target="_blank" rel="noopener" href="http://jingyan.baidu.com/article/ae97a646c814ccbbfd461d24.html">引用地址</a></p>
+<hr>
+<h1 id="4-最新推荐"><a href="#4-最新推荐" class="headerlink" title="4. 最新推荐"></a>4. 最新推荐</h1><p>现在推荐流风轻音制作的 Sublime Text 3 Build 3103 优化版</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="http://haojian138.blog.163.com/blog/static/212643110201393010438357/">Sublime Text 3 Build 3103 优化版</a></li>
+<li><a target="_blank" rel="noopener" href="http://haojian138.blog.163.com/">流风清音的博客</a></li>
+</ol>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>雪中亮「123lml123」
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://bitky.cc/2016/04/15/SublimeText3%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/" title="Sublime Text 3 基本配置教程">http://bitky.cc/2016/04/15/SublimeText3基本配置教程/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/sublime-text/" rel="tag"># sublime text</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2016/04/15/%E3%80%8C%E8%BD%AC%E3%80%8D%E7%94%B5%E5%AD%90%E5%9C%B0%E5%9B%BE%E5%9D%90%E6%A0%87%E7%B3%BB%E7%BB%9F%E7%A0%94%E7%A9%B6%E6%95%B4%E7%90%86/" rel="prev" title="「转」电子地图坐标系统研究整理">
+                  <i class="fa fa-angle-left"></i> 「转」电子地图坐标系统研究整理
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2016/06/04/Qt%E7%A8%8B%E5%BA%8F%E5%9C%A8Windows%E4%B8%8B%E7%9A%84%E5%8F%91%E5%B8%83/" rel="next" title="Qt 程序在 Windows 下的发布">
+                  Qt 程序在 Windows 下的发布 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 2016 – 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">雪中亮「123lml123」</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/bitkylin" class="github-corner" title="在 GitHub 上关注我" aria-label="在 GitHub 上关注我" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
